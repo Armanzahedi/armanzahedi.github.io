@@ -7,15 +7,8 @@ import PerfectScrollbar from 'react-perfect-scrollbar';
 import About from '../components/About/About';
 import ServicesSection from '../components/ServicesSection/ServicesSection';
 import GithubCorner from 'react-github-corner';
-import { Todo } from '@portfolio/shared-types';
 
 export default function Home() {
-  const [Todos, setTodos] = useState<Todo[]>([
-    new Todo({ name: 'test1' }),
-    new Todo({ name: 'test2' }),
-    new Todo({ name: 'test3' }),
-    new Todo({ name: 'test4' }),
-  ]);
   return (
     <Fragment>
       <Head>
@@ -63,9 +56,6 @@ export default function Home() {
       <SideNav />
       <main>
         <HomeSection />
-        {Todos.map((todo) => {
-          return <div key={todo.name}>{todo.name}</div>;
-        })}
         <About />
         <ServicesSection />
         <h1 style={{ paddingTop: '500px' }}>test</h1>
