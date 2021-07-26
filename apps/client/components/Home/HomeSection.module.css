@@ -1,0 +1,135 @@
+.home {
+    padding: 0;
+    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.home .intro {
+    margin: auto;
+    max-width: 540px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+.home .intro img {
+    margin-bottom:1.5rem;
+}
+.home .intro h1 {
+    color: #353353;
+    font-size: 36px;
+    margin-bottom: .5rem;
+}
+[data-theme='dark'] .home .intro h1{
+    color: #fff;
+}
+.home .intro span {
+    color: #353353;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+[data-theme='dark'] .home .intro span {
+    color: #fff;
+}
+section.home .intro ul {
+    padding-left: 0;
+    list-style: none;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+}
+section.home .intro ul li{
+    display: inline-block;
+}
+section.home .intro ul li:not(:last-child) {
+    margin-right: 1.5rem;
+}
+section.home .intro ul li a{
+    transition: all .2s ease-in-out;
+    font-size: 21px;
+}
+[data-theme='dark'] section.home .intro ul li a{
+    color: #fff;
+}
+section.home .intro ul li a:hover{
+    color: #ffd15c;
+}
+.scrollDown {
+    position: absolute;
+    bottom: 40px;
+    left: 0;
+    width: 100%;
+}
+
+.mouseWrapper {
+    font-size: 14px;
+    display: block;
+    max-width: 100px;
+    margin: auto;
+    text-align: center;
+    cursor: pointer;
+}
+[data-theme='dark'] .mouseWrapper {
+    color: #fff;
+}
+.mouseWrapper {
+    color: #353353;
+}
+.mouse {
+    border-radius: 16px;
+    display: block;
+    margin: 10px auto auto;
+    height: 26px;
+    position: relative;
+    width: 20px;
+}
+[data-theme='dark'] .mouse {
+    border: 2px solid #fff;
+}
+.mouse {
+    border: 2px solid #353353;
+}
+.circle, .mouse .wheel {
+    border-radius: 100%;
+}
+.mouse .wheel {
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 4px;
+    -webkit-animation: aniMouse 2s linear infinite;
+    animation: aniMouse 2s linear infinite;
+}
+[data-theme='dark'] .mouse .wheel {
+    background: #fff;
+}
+.mouse .wheel {
+    background: #353353;
+}
+@keyframes aniMouse {
+	0% {
+	opacity: 1;
+	top: 29%;
+	}
+	15% {
+	opacity: 1;
+	top: 50%;
+	}
+	50% {
+	opacity: 0;
+	top: 50%;
+	}
+	100% {
+	opacity: 0;
+	top: 29%;
+	}
+}
+@media only screen and (max-width: 990px) {
+    .scrollDown {
+      bottom: 70px;
+  }
+  }
