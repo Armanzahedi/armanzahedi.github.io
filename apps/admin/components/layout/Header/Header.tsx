@@ -16,15 +16,24 @@ import {
   Image,
   useColorMode,
 } from '@chakra-ui/react';
-import React, { ReactElement } from 'react';
+import React, { memo, ReactElement, useEffect, useRef, useState } from 'react';
 import { FiBell, FiChevronDown, FiMenu } from 'react-icons/fi';
 import { FaMoon, FaSun } from 'react-icons/fa';
 import ThemeSelector from '../ThemeSelector';
+import { useRouter } from 'next/router';
+import { UserDto } from '@portfolio/shared-types';
+import { fetchUsers } from 'libs/data-access/src/api/users.service';
+import { signOut, useSession } from 'next-auth/client';
+import Loading from '../Loading';
+import { Session } from 'next-auth';
+import { useCountRenders } from 'apps/admin/contexts/useCountRender';
+
 interface Props extends FlexProps {
   onOpen: () => void;
+  session: Session;
 }
 
-function Header({ onOpen, ...rest }: Props): ReactElement {
+function Header({ onOpen, session, ...rest }: Props): ReactElement {
   return (
     <Box
       width="100vw"
@@ -90,7 +99,9 @@ function Header({ onOpen, ...rest }: Props): ReactElement {
                       mr="2"
                       pl="8"
                     >
-                      <Text fontSize="sm">Justina Clark</Text>
+                      <Text fontSize="sm">
+                        {session && session?.user?.email}
+                      </Text>
                       <Text fontSize="xs" color="gray.600">
                         Admin
                       </Text>
@@ -108,7 +119,7 @@ function Header({ onOpen, ...rest }: Props): ReactElement {
                   <MenuItem>Settings</MenuItem>
                   <MenuItem>Billing</MenuItem>
                   <MenuDivider />
-                  <MenuItem>Sign out</MenuItem>
+                  <MenuItem onClick={() => signOut()}>Sign out</MenuItem>
                 </MenuList>
               </Menu>
             </Flex>
@@ -119,4 +130,4 @@ function Header({ onOpen, ...rest }: Props): ReactElement {
   );
 }
 
-export default Header;
+export default memo(Header);

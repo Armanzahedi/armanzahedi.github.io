@@ -15,6 +15,7 @@ import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 import { UserService } from './user.service';
 import { Request, Response } from 'express';
 import { UserCreateDto } from '@portfolio/shared-types';
+
 @Controller('users')
 export class UserController {
   constructor(private readonly userService: UserService) {}
@@ -35,12 +36,12 @@ export class UserController {
     @Body() UserCreateDto: Prisma.UserUpdateInput
   ): Promise<User> {
     return this.userService.updateUser({
-      where: { id: Number(id) },
+      where: { id: id },
       data: UserCreateDto,
     });
   }
   @Delete(':id')
   async deleteUser(@Param('id') id: string): Promise<User> {
-    return this.userService.deleteUser({ id: Number(id) });
+    return this.userService.deleteUser({ id: id });
   }
 }

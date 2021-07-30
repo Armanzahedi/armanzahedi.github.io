@@ -5,19 +5,19 @@ import {
   useDisclosure,
   useColorModeValue,
 } from '@chakra-ui/react';
+import { AuthGuard } from 'apps/admin/contexts/AuthGuard';
+import { useSession } from 'next-auth/client';
 import React, { ReactElement, ReactNode } from 'react';
-import Header from '../Header/Header';
-import SidebarContent from './SidebarContent';
+import Header from './Header/Header';
+import SidebarContent from './Sidebar/SidebarContent';
 
-function SidebarWithHeader({
-  children,
-}: {
-  children: ReactNode;
-}): ReactElement {
+function Layout({ children }: { children: ReactNode }): ReactElement {
   const { isOpen, onOpen, onClose } = useDisclosure();
+
+  const [session] = useSession();
   return (
-    <div>
-      <Header onOpen={onOpen} />
+    <AuthGuard>
+      <Header session={session} onOpen={onOpen} />
       <Box>
         <SidebarContent
           onClose={() => onClose}
@@ -49,8 +49,8 @@ function SidebarWithHeader({
           {children}
         </Box>
       </Box>
-    </div>
+    </AuthGuard>
   );
 }
 
-export default SidebarWithHeader;
+export default Layout;

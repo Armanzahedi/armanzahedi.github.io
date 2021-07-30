@@ -4,6 +4,8 @@ import Head from 'next/head';
 import React from 'react';
 import theme from '../lib/ui/theme';
 import '../public/styles/globals.css';
+import { Provider } from 'next-auth/client';
+import { AuthGuard } from '../contexts/AuthGuard';
 function CustomApp({ Component, pageProps }: AppProps) {
   return (
     <>
@@ -12,7 +14,9 @@ function CustomApp({ Component, pageProps }: AppProps) {
       </Head>
       <ChakraProvider theme={theme}>
         <CSSReset />
-        <Component {...pageProps} />
+        <Provider session={pageProps.session}>
+          <Component {...pageProps} />
+        </Provider>
       </ChakraProvider>
     </>
   );

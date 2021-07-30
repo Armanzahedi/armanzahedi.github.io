@@ -69,19 +69,23 @@ export class AuthService {
 
       const user = await this.prismaService.user.findUnique({
         where: {
-          id: parseInt(payload.sub),
+          id: payload.sub,
         },
       });
 
       if (!user) {
+        console.log('!user');
         throw new UnprocessableEntityException('Refresh token malformed');
       }
 
       return { user };
     } catch (error) {
+      console.log('erorr');
       if (error instanceof TokenExpiredError) {
+        console.log('TokenExpiredError');
         throw new UnprocessableEntityException('Refresh token expired');
       } else {
+        console.log('UnprocessableEntityException');
         throw new UnprocessableEntityException('Refresh token malformed');
       }
     }
@@ -95,7 +99,7 @@ export class AuthService {
     const token = await this.generateAccessToken(user);
     return { user, token };
   }
-  async getCurrentUser(id: number): Promise<User> {
+  async getCurrentUser(id: string): Promise<User> {
     return await this.usersService.findUser({ id });
   }
 }

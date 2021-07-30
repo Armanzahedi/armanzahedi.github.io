@@ -44,6 +44,9 @@
       "tags": [],
       "implicitDependencies": ["client"]
     },
+    "data-access": {
+      "tags": []
+    },
     "shared-types": {
       "tags": []
     }

@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@portfolio/data-access": ["libs/data-access/src/index.ts"],
       "@portfolio/shared-types": ["libs/shared-types/src/index.ts"]
     }
   },
