@@ -6,6 +6,7 @@ import ToggleButton from 'react-theme-toggle-button';
 import 'react-theme-toggle-button/dist/index.css';
 import { Link } from 'react-scroll';
 import { ScrollBarProps } from 'react-perfect-scrollbar';
+import { DarkModeSwitch } from 'react-toggle-dark-mode';
 
 function SideNav(): ReactElement {
   const { theme, setTheme, systemTheme } = useTheme();
@@ -36,12 +37,19 @@ function SideNav(): ReactElement {
     <Fragment>
       <header className={classes.sidenav}>
         {/* <ToggleButton isDark={isDarkMode} onChange={toggleTheme} /> */}
-        <DarkModeToggle
+        <DarkModeSwitch
+          checked={!isDarkMode}
+          moonColor="#D0CFD8"
+          sunColor="#D0CFD8"
+          onChange={toggleTheme}
+          size={25}
+        />
+        {/* <DarkModeToggle
           onChange={toggleTheme}
           checked={isDarkMode}
-          size={50}
+          size={30}
           className={classes.darkBtn}
-        />
+        /> */}
         <nav>
           <ul>
             <li>
@@ -50,7 +58,7 @@ function SideNav(): ReactElement {
                 activeClass="activeNav"
                 spy={true}
                 smooth={true}
-                duration={500}
+                duration={400}
               >
                 <i className="icon-home"></i>
               </Link>
@@ -61,7 +69,7 @@ function SideNav(): ReactElement {
                 activeClass="activeNav"
                 spy={true}
                 smooth={true}
-                duration={500}
+                duration={400}
               >
                 <i className="icon-user-following"></i>
               </Link>
@@ -72,7 +80,7 @@ function SideNav(): ReactElement {
                 activeClass="activeNav"
                 spy={true}
                 smooth={true}
-                duration={500}
+                duration={400}
               >
                 <i className="icon-rocket"></i>
               </Link>
@@ -83,23 +91,23 @@ function SideNav(): ReactElement {
                 activeClass="activeNav"
                 spy={true}
                 smooth={true}
-                duration={500}
+                duration={400}
               >
                 <i className="icon-briefcase"></i>
               </Link>
             </li>
-            <li>
+            {/* <li>
               <Link
                 to="works"
                 activeClass="activeNav"
                 spy={true}
                 smooth={true}
-                duration={500}
+                duration={300}
               >
                 <i className="icon-layers"></i>
               </Link>
-            </li>
-            <li>
+            </li> */}
+            {/* <li>
               <Link
                 to="posts"
                 activeClass="activeNav"
@@ -120,7 +128,7 @@ function SideNav(): ReactElement {
               >
                 <i className="icon-bubbles"></i>
               </Link>
-            </li>
+            </li> */}
           </ul>
         </nav>
         <span className={classes.copyWrite}>
@@ -128,11 +136,13 @@ function SideNav(): ReactElement {
         </span>
       </header>
       <div className={classes.bottomNav}>
-        <DarkModeToggle
+        <DarkModeSwitch
+          checked={!isDarkMode}
+          style={{ marginLeft: '2rem' }}
+          moonColor="#D0CFD8"
+          sunColor="#D0CFD8"
           onChange={toggleTheme}
-          checked={isDarkMode}
-          size={50}
-          className={classes.darkBtn2}
+          size={26}
         />
         <a
           onClick={toggleMenu}
@@ -153,7 +163,7 @@ function SideNav(): ReactElement {
               activeClass="activeNav"
               spy={true}
               smooth={true}
-              duration={500}
+              duration={400}
             >
               <i className="icon-home"></i>
             </Link>
@@ -164,7 +174,7 @@ function SideNav(): ReactElement {
               activeClass="activeNav"
               spy={true}
               smooth={true}
-              duration={500}
+              duration={400}
             >
               <i className="icon-user-following"></i>
             </Link>
@@ -175,7 +185,7 @@ function SideNav(): ReactElement {
               activeClass="activeNav"
               spy={true}
               smooth={true}
-              duration={500}
+              duration={400}
             >
               <i className="icon-rocket"></i>
             </Link>
@@ -186,12 +196,12 @@ function SideNav(): ReactElement {
               activeClass="activeNav"
               spy={true}
               smooth={true}
-              duration={500}
+              duration={400}
             >
               <i className="icon-briefcase"></i>
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link
               to="works"
               activeClass="activeNav"
@@ -223,7 +233,7 @@ function SideNav(): ReactElement {
             >
               <i className="icon-bubbles"></i>
             </Link>
-          </li>
+          </li> */}
         </ul>
       </div>
     </Fragment>

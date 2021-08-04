@@ -28,24 +28,30 @@ function About(): ReactElement {
           <div className={`col-md-9 ${classes.card}`}>
             <div className={classes.cardContent}>
               <div className="row">
-                <div className="col-md-6">
-                  <p>
-                    I am Bolby Doe, web developer from London, United Kingdom. I
-                    have rich experience in web site design and building and
-                    customization, also I am good at WordPress.
+                <div className="col-md-7">
+                  <p style={{ textAlign: 'justify' }}>
+                    Self taught Full-Stack Developer with 4+ years of experience
+                    developing mainly web based solutions using ASP.NET , .NET
+                    Core. Skilled in architecting and executing customized,
+                    web-based solutions. Expertise in requirements design,
+                    development, testing, maintenance enhancement, and
+                    production support of business applications. Currently
+                    interested in building full featured platforms using react
+                    and blockchain technologies and developing new solutions for
+                    worn processes.
                   </p>
-                  <a href="" className="contactBtn">
+                  <a href="#" className="contactBtn">
                     Download CV
                   </a>
                 </div>
-                <div className={`col-md-6 ${classes.progresses}`}>
+                <div className={`col-md-5 ${classes.progresses}`}>
                   <div>
                     <div className={classes.progressWrapper}>
                       <h4>Front-End development</h4>
-                      <span>85%</span>
+                      <span>80%</span>
                     </div>
                     <ProgressBar
-                      completed={85}
+                      completed={80}
                       bgColor="#ffd15c"
                       isLabelVisible={false}
                       labelColor="#ffffff"
@@ -78,6 +84,32 @@ function About(): ReactElement {
                       height="10px"
                     />
                   </div>
+                  <div>
+                    <div className={`${classes.progressWrapper} ${classes.pt}`}>
+                      <h4>Mobile app development</h4>
+                      <span>85%</span>
+                    </div>
+                    <ProgressBar
+                      completed={85}
+                      bgColor="#06d6a0"
+                      isLabelVisible={false}
+                      labelColor="#ffffff"
+                      height="10px"
+                    />
+                  </div>
+                  <div>
+                    <div className={`${classes.progressWrapper} ${classes.pt}`}>
+                      <h4>Blockchain development</h4>
+                      <span>60%</span>
+                    </div>
+                    <ProgressBar
+                      completed={60}
+                      bgColor="#118ab2"
+                      isLabelVisible={false}
+                      labelColor="#ffffff"
+                      height="10px"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
@@ -92,7 +124,7 @@ function About(): ReactElement {
                 <div className={classes.details}>
                   <h3 className={`mb-0 mt-0 ${classes.number}`}>
                     <em className="count">
-                      <span>198</span>
+                      <span>25</span>
                     </em>
                   </h3>
                   <p className="mb-0">Projects completed</p>
@@ -122,7 +154,7 @@ function About(): ReactElement {
                 <div className={classes.details}>
                   <h3 className={`mb-0 mt-0 ${classes.number}`}>
                     <em className="count">
-                      <span>427</span>
+                      <span>20</span>
                     </em>
                   </h3>
                   <p className="mb-0">Satisfied clients</p>
@@ -137,10 +169,10 @@ function About(): ReactElement {
                 <div className={classes.details}>
                   <h3 className={`mb-0 mt-0 ${classes.number}`}>
                     <em className="count">
-                      <span>35</span>
+                      <span>22</span>
                     </em>
                   </h3>
-                  <p className="mb-0">Nominees winner</p>
+                  <p className="mb-0">Years completed</p>
                 </div>
               </div>
             </div>

@@ -6,34 +6,18 @@ import Header from '../components/layout/Header/Header';
 import styles from '../styles/Home.module.css';
 import Router from 'next/router';
 import Loading from '../components/layout/Loading';
-import { signOut, useSession } from 'next-auth/client';
 import Layout from '../components/layout/Layout';
 import { UserDto } from '@portfolio/shared-types';
 import { userService } from '@portfolio/data-access';
+import { useQuery } from 'react-query';
+import { useSession } from 'next-auth/client';
 
 export default function Home() {
-  // const { signUp, loading, error, user } = useAuth();
-  // useEffect(() => {
-  //   if (!loading) {
-  //     console.log('as', user);
-  //     if (error) {
-  //       console.log('er', error);
-  //     }
-  //     if (!user) {
-  //       Router.push('/login');
-  //     }
-  //   }
-  // }, [user, loading]);
   const [Users, setUsers] = useState<UserDto[]>([]);
   const [session] = useSession();
-  useEffect(() => {
-    if (session) {
-      userService.fetchUsers().then((data) => {
-        setUsers(data);
-        console.log(data);
-      });
-    }
-  }, [session]);
+  const { data, status } = useQuery('users', () => userService.fetchUsers(), {
+    enabled: !!session,
+  });
   return (
     <>
       <Head>
@@ -52,6 +36,16 @@ export default function Home() {
           <Heading as="h1" fontWeight="normal" fontSize="25">
             به پنل مدیریت خوش آمدید
           </Heading>
+          <div>
+            <h3>lets see</h3>
+            {status === 'loading' && <div>{status}</div>}
+            {status === 'error' && <div>{status}</div>}
+            {status === 'success' &&
+              data.map((user) => {
+                console.log('map');
+                return <div key={user.email}>{user.email}</div>;
+              })}
+          </div>
         </Box>
       </Layout>
     </>

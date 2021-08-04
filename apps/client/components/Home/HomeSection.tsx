@@ -47,27 +47,35 @@ function HomeSection(): ReactElement {
         </span>
         <ul>
           <li>
-            <a href="">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://wa.me/+989921744820"
+            >
               <i className="fab fa-whatsapp"></i>
             </a>
           </li>
           <li>
-            <a href="">
+            <a target="_blank" rel="noreferrer" href="https://t.me/armanzdii">
               <i className="fab fa-telegram"></i>
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="mailto:armanzdii@gmail.com">
               <i className="fas fa-at"></i>
             </a>
           </li>
           <li>
-            <a href="">
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://github.com/armanzahedi"
+            >
               <i className="fab fa-github"></i>
             </a>
           </li>
         </ul>
-        <a href="" className={`contactBtn`}>
+        <a href="tel:+989921744820" className={`contactBtn`}>
           Contact Me
         </a>
       </div>

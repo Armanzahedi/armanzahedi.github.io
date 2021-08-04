@@ -56,3 +56,36 @@ model VerificationRequest {
 
   @@unique([identifier, token])
 }
+
+model StaticContent {
+  id Int @default(autoincrement()) @id
+  name String
+  image String?
+  whatsApp String?
+  telegram String?
+  email String?
+  github String?
+  skills Skill[]
+  aboutMe String?
+  cv String?
+  projectsCompleted Int
+  cupsOfCoffee Int
+  satisfiedClients Int
+  yearsOld Int
+}
+model Skill {
+  id        Int   @id @default(autoincrement())
+  staticContent StaticContent @relation(fields: [staticContentId],references:[id])
+  staticContentId  Int 
+  title String
+}
+model ProgressBars {
+  id        Int   @id @default(autoincrement())
+  title String
+  ProgressPercentage Int
+}
+model services {
+  id        Int   @id @default(autoincrement())
+  title String
+  description String
+}

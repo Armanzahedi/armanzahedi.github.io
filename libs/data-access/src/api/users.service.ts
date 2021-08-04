@@ -1,11 +1,16 @@
 import { http } from './ApiClient';
 import { UserCreateDto, UserDto } from '@portfolio/shared-types';
+import { useQuery, UseQueryResult } from 'react-query';
+import { Session } from 'next-auth';
 
+// export const fetchUsers = async (): Promise<UserDto[]> => {
+//   const { data } = await http.get<UserDto[]>('/users');
+//   return data;
+// };
 export const fetchUsers = async (): Promise<UserDto[]> => {
   const { data } = await http.get<UserDto[]>('/users');
   return data;
 };
-
 export const createUser = async (user: UserCreateDto): Promise<UserDto> => {
   return await http.post<UserCreateDto, UserDto>('/users', user);
 };

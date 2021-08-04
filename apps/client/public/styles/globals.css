@@ -129,9 +129,27 @@
     color: white;
   }
   section {
-    padding-top: 110px;
+    padding-top: 30px;
+    padding-bottom: 80px;
     position: relative;
   }
   .fixSpacing>[class^=col-] {
     margin-top: 30px;
   }
+  .vertical-timeline.vertical-timeline--animate.vertical-timeline--one-column-left::before {
+    background: #302F4E;
+    border-radius: 50px;
+  }
+  [data-theme='dark'] .vertical-timeline.vertical-timeline--animate.vertical-timeline--one-column-left::before{
+    background: #FFFFFF;
+  }
+  .vertical-timeline-element-icon {
+    box-shadow: 0 0 0 4px #302F4E, inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%) !important;
+  }
+  [data-theme='dark']  .vertical-timeline-element-icon {
+    box-shadow: 0 0 0 4px rgb(255, 255, 255), inset 0 2px 0 rgb(0 0 0 / 8%), 0 3px 0 4px rgb(0 0 0 / 5%) !important;
+  }
+
+  html, body {
+    overflow-x:hidden 
+  } 

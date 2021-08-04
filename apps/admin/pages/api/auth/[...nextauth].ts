@@ -86,17 +86,17 @@ const options = {
       }
 
       // Refresh the token in case time has passed
-      console.log('go fo it', prevToken);
       return refreshAccessToken(prevToken.refreshToken);
     },
     async session(session, token) {
-      console.log('tttt', token);
-      console.log(session);
-      session.accessToken = token.accessToken;
-      session.user = token.user;
-      session.expiresIn = token.expiresIn;
-      console.log(session);
-      return session;
+      if (token) {
+        session.accessToken = token.accessToken;
+        session.user = token.user;
+        session.expiresIn = token.expiresIn;
+        return session;
+      } else {
+        Promise.reject('/login');
+      }
     },
   },
   // callbacks: {
@@ -154,7 +154,6 @@ const refreshAccessToken = async (refreshToken) => {
   const token = await authService.refreshToken(refreshToken);
 
   // Do what you want
-  console.log('tsa', token);
   return {
     user: token.user,
     accessToken: token.accessToken,

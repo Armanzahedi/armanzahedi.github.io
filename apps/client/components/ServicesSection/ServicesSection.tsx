@@ -28,8 +28,8 @@ function ServicesSection(): ReactElement {
               />
               <h3 className="mb-3 mt-2">UI/UX design</h3>
               <p className="mb-0">
-                Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean
-                commodo ligula eget.
+                Experienced in designing and prototyping web and mobile
+                applications mainly using figma.
               </p>
             </div>
           </div>
@@ -49,8 +49,8 @@ function ServicesSection(): ReactElement {
               />
               <h3 className="mb-3 mt-2">Web Development</h3>
               <p className="mb-0">
-                Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean
-                commodo ligula eget.
+                Expert in developing web based solutions ( APIs and websites )
+                using .Net stack and/or nodejs.
               </p>
             </div>
           </div>
@@ -68,10 +68,10 @@ function ServicesSection(): ReactElement {
                 width="80"
                 height="80"
               />
-              <h3 className="mb-3 mt-2">Application Development</h3>
+              <h3 className="mb-3 mt-2">Mobile app Development</h3>
               <p className="mb-0">
-                Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean
-                commodo ligula eget.
+                Experienced in developing cross-platform mobile apps (for
+                android, ios and web) using flutter.
               </p>
             </div>
           </div>

@@ -56,7 +56,7 @@ const LoginForm = (props: Props) => {
 
   return (
     <Box my={8} textAlign="left">
-      <AlertMessage description="نام کاربری یا رمز عبور وارد شده پیدا نشد" />
+      {/* <AlertMessage description="نام کاربری یا رمز عبور وارد شده پیدا نشد" /> */}
       <Formik
         initialValues={initialValues}
         onSubmit={(values, { setSubmitting }) => {
