@@ -30,6 +30,12 @@ export const SOCIALS: SocialObjects = [
     linkTitle: ` Me on Github`,
     active: true,
   },
+  {
+    name: "Devto",
+    href: "https://dev.to/armanzahedi",
+    linkTitle: `Me on dev.to`,
+    active: true,
+  },
 
   {
     name: "LinkedIn",
@@ -43,10 +49,17 @@ export const SOCIALS: SocialObjects = [
     linkTitle: `Email me`,
     active: true,
   },
+
   {
-    name: "Twitter",
+    name: "Medium",
+    href: "https://medium.com/@armanzahedi",
+    linkTitle: `Me on Medium`,
+    active: true,
+  },
+  {
+    name: "X",
     href: "https://x.com/itstiredmilk",
-    linkTitle: `Me on Twitter`,
+    linkTitle: `Me on X`,
     active: true,
   },
   {
@@ -59,8 +72,9 @@ export const SOCIALS: SocialObjects = [
     name: "WhatsApp",
     href: "https://wa.me/+971501749678",
     linkTitle: `Me on WhatsApp`,
-    active: true,
+    active: false,
   },
+
 
   {
     name: "TikTok",
