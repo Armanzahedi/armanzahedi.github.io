@@ -1,6 +1,6 @@
 ---
 author: Arman Zahedi
-pubDatetime: 2024-02-01T18:14:54.547Z
+pubDatetime: 2024-02-01T15:26:06.048Z
 title: What is Behavior-Driven Development (BDD)?
 slug: what-is-behavior-driven-development-bdd
 featured: true
