@@ -23,7 +23,7 @@ I think the best way to understand something is to understand the problem it act
 
 ### **Scenario**
 
-So, I spent weeks researching hundreds of companies of different sizes that were trying to automate their processes by developing software. I created a dataset of these companies to pinpoint exactly which size, which domain, and with how much technical expertise is needed for BDD to be a good choice.
+So, I spent weeks researching hundreds of companies of different sizes that were trying to automate their processes by developing software. I created a dataset of these companies to pinpoint exactly which size, which domain, and how much technical expertise is needed for BDD to be a good fit.
 
 Just kidding, I asked ChatGPT to come up with a scenario, and it came up with this.
 
