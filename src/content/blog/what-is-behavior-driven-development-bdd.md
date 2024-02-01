@@ -11,7 +11,7 @@ tags:
 description: "BDD combines the general techniques and principles of TDD with ideas from Domain-Driven Design and object-oriented analysis and design to provide software development and management teams with shared tools and a shared process to collaborate on software development."
 ---
 
-If you're a good developer looking at how you can write clean, maintainable software and researching different software development processes, you've probably seen acronyms like BDD, TDD, ATDD, DDD,... and you realize there are so many 'didies,' and you just can't stop looking at them, which is a good thing. It means that you're hitting your puberty as a software engineer and entering your over-engineering era. But learning all of these may be necessary, but also can be confusing. So, let's explore them one by one. Today, we're checking out the 'B' one, or Behavior-Driven Development.
+If you're a good developer looking at how you can write clean, maintainable software and researching different software development processes, you've probably seen acronyms like BDD, TDD, ATDD, DDD,... and you realize there are so many 'didies,' and you just can't stop looking at them, which is a good thing. It means that you're hitting your puberty as a software engineer and entering your over-engineering era. Learning all of these may be necessary, but also can be confusing. So, let's explore them one by one. Today, we're checking out the 'B' one, or Behavior-Driven Development.
 
 Since Wikipedia is such a great source of knowledge (jk), let's see what it has to say about Behavior-Driven Development.
 
