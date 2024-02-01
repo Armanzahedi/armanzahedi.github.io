@@ -33,7 +33,7 @@ const socialIcons = {
     <line x1="16.5" y1="7.5" x2="16.5" y2="7.501"></line>
   </svg>`,
   LinkedIn: `<svg
-  style="margin-bottom:-4px"
+  style="margin-bottom:-3.249px"
     xmlns="http://www.w3.org/2000/svg"
     class="icon-tabler"
     stroke-linecap="round"
@@ -47,7 +47,7 @@ const socialIcons = {
     <path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
   </svg>`,
   Mail: `<svg
-  style="margin-bottom:-7px"
+  style="margin-bottom:-3.35px"
       xmlns="http://www.w3.org/2000/svg"
       class="icon-tabler"
       stroke-linecap="round"
@@ -214,7 +214,7 @@ const socialIcons = {
 Devto: `<svg class="icon-tabler" style="margin-bottom:-3px"  viewBox="-80 -60 600 610" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
 <path fill="currentColor" d="M120.12 208.29c-3.88-2.9-7.77-4.35-11.65-4.35H91.03v104.47h17.45c3.88 0 7.77-1.45 11.65-4.35s5.82-7.25 5.82-13.06v-69.65c-.01-5.8-1.96-10.16-5.83-13.06zM404.1 32H43.9C19.7 32 .06 51.59 0 75.8v360.4C.06 460.41 19.7 480 43.9 480h360.2c24.21 0 43.84-19.59 43.9-43.8V75.8c-.06-24.21-19.7-43.8-43.9-43.8zM154.2 291.19c0 18.81-11.61 47.31-48.36 47.25h-46.4V172.98h47.38c35.44 0 47.36 28.46 47.37 47.28zm100.68-88.66H201.6v38.42h32.57v29.57H201.6v38.41h53.29v29.57h-62.18c-11.16.29-20.44-8.53-20.72-19.69V193.7c-.27-11.15 8.56-20.41 19.71-20.69h63.19zm103.64 115.29c-13.2 30.75-36.85 24.63-47.44 0l-38.53-144.8h32.57l29.71 113.72 29.57-113.72h32.58z"/>
 </svg>`,
-X: `<svg class="icon-tabler" style="margin-bottom:-3px"  viewBox="-80 -40 600 580" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+X: `<svg class="icon-tabler" style="margin-bottom:-4px"  viewBox="-80 -40 600 580" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
 <path fill="currentColor" d="M394.033.25h76.67L303.202 191.693l197.052 260.511h-154.29L225.118 294.205 86.844 452.204H10.127l179.16-204.77L.254.25H158.46l109.234 144.417zm-26.908 406.063h42.483L135.377 43.73h-45.59z" fill="#000"/>
 </svg>`,
 };
