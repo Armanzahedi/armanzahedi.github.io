@@ -1,17 +1,15 @@
 ---
 author: Arman Zahedi
-pubDatetime: 2024-02-01T15:26:06.048Z
+pubDatetime: 2024-02-01T15:51:27.613Z
 title: What is Behavior-Driven Development (BDD)?
 slug: what-is-behavior-driven-development-bdd
 featured: true
+draft: false
 tags:
   - bdd
   - software development
-
-
 description: "BDD combines the general techniques and principles of TDD with ideas from Domain-Driven Design and object-oriented analysis and design to provide software development and management teams with shared tools and a shared process to collaborate on software development."
 ---
-**What is Behavior-Driven Development (BDD)?**
 
 If you're a good boy/girl looking at how you can write clean, maintainable software and researching different software development processes, you've probably seen acronyms like BDD, TDD, ATDD, DDD,... and you realize there are so many 'didies,' and you just can't stop looking at them, which is a good thing. It means that you're hitting your puberty as a software engineer and entering your over-engineering era. But learning all of these may be necessary, but also can be confusing. So, let's explore them one by one. Today, we're checking out the 'B' one, or Behavior-Driven Development.
 
@@ -23,8 +21,7 @@ This is what Wikipedia says about BDD, and I'm too dumb to understand it, so let
 
 I think the best way to understand something is to understand the problem it actually solves. So, let's consider a problem scenario where BDD would be a good fit.
 
----
-**Scenario**
+### **Scenario**
 
 So, I spent weeks researching hundreds of companies of different sizes that were trying to automate their processes by developing software. I created a dataset of these companies to pinpoint exactly which size, which domain, and with how much technical expertise is needed for BDD to be a good choice.
 
@@ -40,8 +37,8 @@ Even with adopting agile methodologies and defining user stories, having a QA te
 
 No, actually wait, let's have a brief look at DDD and TDD first.
 
----
-**Test-Driven Development (TDD)**
+
+### **Test-Driven Development (TDD)**
 
 Test-Driven Development (TDD) is a software development process relying on software requirements being converted to test cases before software is fully developed, and tracking all software development by repeatedly testing the software against all test cases. This is as opposed to software being developed first and test cases created later.
 
@@ -57,14 +54,14 @@ Ok, but why use it?
     
 5. **Documentation**: The test cases themselves serve as documentation for the system. They clearly demonstrate what the code is supposed to do, which is helpful for new developers joining the project or when revisiting an older codebase.
     
----
 
-**Domain-Driven Design (DDD)**
+
+### **Domain-Driven Design (DDD)**
 
 Domain-Driven Design (DDD) is a software development approach that focuses on modeling software based on the real-world business domain it aims to serve. The core idea is to align the software architecture and development practices with the business domain's complexities. This approach emphasizes collaboration between technical and domain experts to gain a deep understanding of the domain, which in turn informs how the software is structured. Key concepts in DDD include the ubiquitous language, a shared language between developers and domain experts, entities and value objects that model domain concepts, and bounded contexts that define logical boundaries in the domain. By doing so, DDD helps create software systems that are more meaningful, flexible, and aligned with business needs, enabling them to evolve as the domain itself evolves.
 
----
-**So, what does it have to do with BDD?**
+
+### **So, what does it have to do with BDD?**
 
 Behavior-Driven Development (BDD) takes the foundational principles of TDD – writing tests first and focusing on small, incremental development steps – and combines them with the domain-centric approach of DDD. It emphasizes collaboration, a shared language, and a focus on defining and delivering business value, making it a powerful methodology for developing software that meets both technical and business requirements effectively.
 

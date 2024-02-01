@@ -5,6 +5,7 @@ import getUniqueTags from "@utils/getUniqueTags";
 import getPostsByTag from "@utils/getPostsByTag";
 import getPageNumbers from "@utils/getPageNumbers";
 import getPagination from "@utils/getPagination";
+import post from "@utils/og-templates/post";
 
 export interface Props {
   post: CollectionEntry<"blog">;
@@ -12,9 +13,9 @@ export interface Props {
   tagName: string;
 }
 
+export const prerender = true;
 export async function getStaticPaths() {
   const posts = await getCollection("blog");
-
   const tags = getUniqueTags(posts);
 
   return tags.flatMap(({ tag, tagName }) => {
