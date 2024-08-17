@@ -2,23 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
+.font-fam {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+}
+a .txt{
+  @apply underline  decoration-dashed
+}
+a .tg {
+margin-right: .6em;
+}
 @layer base {
   :root,
   html[data-theme="light"] {
     --color-fill: 251, 254, 251;
     --color-text-base: 40, 39, 40;
-    --color-accent: 150, 67, 247;
+    --color-accent: 0, 0, 0;
     --color-card: 230, 230, 230;
     --color-card-muted: 205, 205, 205;
     --color-border: 236, 233, 233;
   }
   html[data-theme="dark"] {
-    --color-fill: 33, 39, 55;
+    --color-fill: 3, 4, 5;
     --color-text-base: 234, 237, 243;
-    --color-accent: 172, 104, 252;
+    --color-accent: 255, 255, 255;
     --color-card: 52, 63, 96;
     --color-card-muted: 138, 51, 2;
-    --color-border: 81, 43, 212;
+    --color-border: 61, 61, 61;
   }
   #sun-svg,
   html[data-theme="dark"] #moon-svg {
@@ -29,7 +41,7 @@
     display: block;
   }
   body {
-    @apply flex min-h-[100svh] flex-col bg-skin-fill font-mono text-skin-base 
+    @apply flex min-h-[100svh] flex-col bg-skin-fill font-fam text-skin-base 
     selection:bg-skin-accent selection:bg-opacity-70 selection:text-skin-inverted;
   }
   section,
