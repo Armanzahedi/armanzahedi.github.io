@@ -4,7 +4,7 @@ pubDatetime: 2024-02-01T15:51:27.613Z
 title: What is Behavior-Driven Development (BDD)?
 slug: what-is-behavior-driven-development-bdd
 featured: true
-draft: false
+draft: true
 tags:
   - bdd
   - software development
