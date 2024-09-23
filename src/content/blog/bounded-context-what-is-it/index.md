@@ -42,17 +42,6 @@ Imagine you're working on an **HR management system** for corporate clients. One
 
 Same word, **two different meanings**. Without boundaries, things get messy.
 
-## Drawing the Lines
-
-To prevent this chaos, we establish **Bounded Contexts**. Each context has its own model, language, and rules. In our example:
-
-- **Sales Bounded Context**: Deals with leads, contracts, and revenue.
-- **Leave Management Bounded Context**: Focuses on employees, leave policies, and approvals.
-
-![bounded context 2](./bounded-context-2.png)
-
-By defining these boundaries, teams can work independently without stepping on each other's toes—or code.
-
 
 ## Ubiquitous Language: The Double-Edged Sword
 
@@ -70,6 +59,19 @@ As the software grows, maintaining a ubiquitous language becomes as challenging 
 ### The Solution
 
 **Bounded Contexts** help preserve the integrity of ubiquitous language within specific domains. Each context has its own language that is ubiquitous **within that boundary**. This way, the term "client" is crystal clear in the sales context and equally clear—but differently defined—in the leave management context.
+
+
+## Drawing the Lines
+
+To prevent the chaos, we establish **Bounded Contexts**. Each context has its own model, language, and rules. In our example:
+
+- **Sales Bounded Context**: Deals with leads, contracts, and revenue.
+- **Leave Management Bounded Context**: Focuses on employees, leave policies, and approvals.
+
+![bounded context 2](./bounded-context-2.png)
+
+By defining these boundaries, teams can work independently without stepping on each other's toes—or code.
+
 
 ## The Happy Coincidence (Kind Of)
 
