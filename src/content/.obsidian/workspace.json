@@ -1,0 +1,184 @@
+{
+  "main": {
+    "id": "ff22fd2bda31b594",
+    "type": "split",
+    "children": [
+      {
+        "id": "f4c92562c21ea2f9",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "4ad2c624a81bbf74",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "blog/good-vs-bad-abstraction/index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "index"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a1d5c7f1fc723592",
+    "type": "split",
+    "children": [
+      {
+        "id": "0a2d951ac6112469",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5294c639287cac2b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "207451c9c6a2f8f9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "tag:c#",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "d74135e64339d052",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "4bb991cf1f08b7c5",
+    "type": "split",
+    "children": [
+      {
+        "id": "e5b1220907d7b67e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c9a7df5035902a6f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "blog/good-vs-bad-abstraction/index.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for index"
+            }
+          },
+          {
+            "id": "64b4150cbcc9fba5",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "blog/good-vs-bad-abstraction/index.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from index"
+            }
+          },
+          {
+            "id": "2696e1879d0431bc",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "e956c65d5f8c89ee",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "blog/good-vs-bad-abstraction/index.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of index"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "5294c639287cac2b",
+  "lastOpenFiles": [
+    "blog/good-vs-bad-abstraction/good-vs-bad-abstraction-1.jpg",
+    "blog/good-vs-bad-abstraction/index.md",
+    "blog/bounded-context-what-is-it/index.md",
+    "blog/good-vs-bad-abstraction/good-vs-bad-abstraction-2.jpg",
+    "blog/good-vs-bad-abstraction/9l54af.jpg",
+    "blog/good-vs-bad-abstraction/1qg3wp-59689211.jpg",
+    "blog/good-vs-bad-abstraction",
+    "blog/bounded-context-what-is-it/bounded-context-3.png",
+    "blog/bounded-context-what-is-it/bounded-context-2.png",
+    "blog/what-is-behavior-driven-development-bdd.md"
+  ]
+}
