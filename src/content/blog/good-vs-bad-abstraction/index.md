@@ -43,6 +43,7 @@ Abstraction isn't just confined to software, it’s a universal.
 
 # **Driving a car**
 
+![good vs bad abstraction 1](./good-vs-bad-abstraction-1.jpg)
 ![[good-vs-bad-abstraction-1.jpg]]
 
 Consider driving a card. When you press the gas pedal, you're engaging with a simple, high-level control that hides a wealth of complex processes. Pressing the pedal sends a signal to the engine, regulating the air and fuel mixture entering the combustion chambers. This converts chemical energy into mechanical power. Beyond the engine, the transmission translates that power into wheel motion through a series of gears. The car abstracts a multitude of underlying mechanisms into a simple interface: you press the pedal, and the car takes care of the rest.
@@ -160,5 +161,7 @@ If an abstraction is required, invest some time on designing the right public co
 
 In the end, every man-made tool is just an abstraction :)
 
+![good vs bad abstraction 2](./good-vs-bad-abstraction-2.jpg)
 ![[good-vs-bad-abstraction-2.jpg]]
+
 
