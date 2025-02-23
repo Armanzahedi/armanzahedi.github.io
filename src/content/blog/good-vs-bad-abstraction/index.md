@@ -50,12 +50,12 @@ Consider driving a card. When you press the gas pedal, you're engaging with a si
 
 If you really think about it, every "thing" is an abstraction. Every tool, every interface, every object is hiding its underlying complexity, and the best ones are the ones that are so well crafted that you don't even notice the details.
 
-# **So why is abstraction such a big deal in software? 
+# So why is abstraction such a big deal in software? 
 
 Because **we build and refine abstractions every day** and modern software isn’t static; it’s dynamic, evolving, and often unpredictable. That’s why the abstractions we design need to strike a balance: they must be generic and flexible enough to accommodate for future change in the requirement, yet detailed enough to provide clear benefits in terms of clarity, and functionality.
 
 
-# **What is a good abstraction then?
+# What is a good abstraction then?
 
 You want abstraction in your code because it makes complex tasks seem simpler, it makes life easier. You put common operations behind a simple contract so you can concentrate on the more important issues.
 
@@ -145,7 +145,7 @@ Good abstraction cleanly separates concerns and allows developers (or users) to 
 4. **Testability:** Abstractions, such as interfaces, facilitate unit testing by allowing the use of mock implementations.
 5. **Generalization:** Analyze every variable in the implementation—determine if it needs to be configurable, replaceable, or hidden from the consumer.
 
-## Characteristics of Bad Abstraction
+## Bad Abstraction
 
 Bad abstractions result when there is an attempt to oversimplify or combine unrelated responsibilities. Common pitfalls include:
 
