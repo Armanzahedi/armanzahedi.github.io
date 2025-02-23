@@ -41,7 +41,7 @@ So, when you use RestSharp, you're leveraging a series of nested abstractions—
 
 Abstraction isn't just confined to software, it’s a universal. 
 
-# **Driving a car**
+## Driving a car
 
 ![good vs bad abstraction 1](./good-vs-bad-abstraction-1.jpg)
 
@@ -49,12 +49,12 @@ Consider driving a card. When you press the gas pedal, you're engaging with a si
 
 If you really think about it, every "thing" is an abstraction. Every tool, every interface, every object is hiding its underlying complexity, and the best ones are the ones that are so well crafted that you don't even notice the details.
 
-# So why is abstraction such a big deal in software? 
+## So why is abstraction such a big deal in software? 
 
 Because **we build and refine abstractions every day** and modern software isn’t static; it’s dynamic, evolving, and often unpredictable. That’s why the abstractions we design need to strike a balance: they must be generic and flexible enough to accommodate for future change in the requirement, yet detailed enough to provide clear benefits in terms of clarity, and functionality.
 
 
-# What is a good abstraction then?
+## What is a good abstraction then?
 
 You want abstraction in your code because it makes complex tasks seem simpler, it makes life easier. You put common operations behind a simple contract so you can concentrate on the more important issues.
 
@@ -62,7 +62,7 @@ An abstraction should be solid and encapsulated, yet flexible enough to meet use
 
 On the other side, an abstraction that isn’t flexible enough to handle change in the requirement will be abandoned, or even worst, it will become a **God Class**. The right level of abstraction always depends on the context.
 
-# **Repository, An abstraction that makes you cringe every time**
+## Repository, An abstraction that makes you cringe every time
 
 Consider this example (implementation details removed for simplicity):
 
@@ -129,7 +129,7 @@ These points might seem either overkill or completely valid depending on the con
 
 The key is to be pragmatic: abstract only when it truly makes sense and adds value.
 
-# In General
+## In General
 
 In general, a good abstraction simplifies life by hiding complex details, should be common enough to be useful, and must strike a balance between being cohesive enough to protect its internals while flexible enough to handle change.
 
