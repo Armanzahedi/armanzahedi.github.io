@@ -1,8 +1,8 @@
 ---
 author: Arman Zahedi
 pubDatetime: 2024-09-23T15:29:00
-title: Bounded Context What the Hell Is It?
-slug: bounded-context-what-the-hell-is-it
+title: Bounded Context
+slug: bounded-context
 image: "./bounded-context-2.png"
 featured: false
 draft: false
