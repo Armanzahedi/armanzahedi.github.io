@@ -3,8 +3,8 @@ author: Arman Zahedi
 pubDatetime: 2026-04-17T22:30:00
 title: DNS as a Lifeline: Tunneling Through Internet Shutdown
 slug: dns-as-a-lifeline
-image: "./dnstt.png"
-featured: false
+image: "./dns-as-a-lifeline-5.png"
+featured: true
 draft: false
 tags:
   - dns
