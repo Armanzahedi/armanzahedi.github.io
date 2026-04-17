@@ -1,7 +1,7 @@
 import type { Site, SocialObjects } from "./types";
 
 export const SITE: Site = {
-  website: "https://armanzahedi.com", // replace this with your deployed domain
+  website: "https://arman.space", // replace this with your deployed domain
   author: "Arman Zahedi",
   desc: "My digital coding notebook.",
   title: "Arman's Blog",
@@ -69,14 +69,6 @@ export const SOCIALS: SocialObjects = [
     active: false,
   },
   {
-    name: "WhatsApp",
-    href: "https://wa.me/+971501749678",
-    linkTitle: `Me on WhatsApp`,
-    active: false,
-  },
-
-
-  {
     name: "TikTok",
     href: "",
     linkTitle: `Me on TikTok`,
@@ -110,12 +102,6 @@ export const SOCIALS: SocialObjects = [
     name: "Steam",
     href: "",
     linkTitle: `Me on Steam`,
-    active: false,
-  },
-  {
-    name: "Telegram",
-    href: "https://t.me/armanzdii",
-    linkTitle: `Me on Telegram`,
     active: false,
   },
   {
